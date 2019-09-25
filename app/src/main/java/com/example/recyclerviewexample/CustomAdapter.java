@@ -42,7 +42,7 @@ public class CustomAdapter extends RecyclerView.Adapter<CustomAdapter.ViewHOlder
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent (context,SecondActivity.class);
-                intent.putExtra( "image",(int) personImage.get(position) );
+                intent.putExtra( "image", personImage.get(position) );
                 context.startActivity( intent );
             }
         } );
